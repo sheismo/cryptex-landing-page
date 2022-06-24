@@ -220,7 +220,7 @@ nav.mobile-screen ul li a:hover{
 
 .banner{
     width: 80%;
-    margin: 70px auto -150px;
+    margin: 70px auto 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
