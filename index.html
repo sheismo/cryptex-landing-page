@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptexx</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- header section -->
+    <header>
+        <div class="logo-div">
+            <h1><a href="index.html">Cryptexx</a></h1>
+        </div>
+
+        <nav class="large-screen">
+            <ul>
+                <li><a href="buy-sell.html">Buy/Sell</a></li>
+                <li><a href="#">Markets</a></li>
+                <li><a href="#">Trade</a></li>
+                <li><a href="#">Finance</a></li>
+                <li><a href="#">NFTs</a></li>
+            </ul>
+        </nav>
+
+        <div class="buttons">
+            <button class="register"><i class="bi bi-person"></i>Register</button>
+            <button class="connect"><i class="bi bi-wallet"></i>Connect Wallet</button>
+        </div>
+
+        <i class="bi bi-list" id="icon" onclick="toggleNav()"></i>
+    </header>
+
+    <div class="mobile-nav">
+        <nav class="mobile-screen">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="buy-sell.html">Buy/Sell</a></li>
+                <li><a href="#">Markets</a></li>
+                <li><a href="#">Trade</a></li>
+                <li><a href="#">Finance</a></li>
+                <li><a href="#">NFTs</a></li>
+                <button class="register"><i class="bi bi-person"></i>Register</button>
+                <br>
+                <button class="connect"><i class="bi bi-wallet"></i>Connect Wallet</button>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- landing page banner -->
+    <div class="banner">
+        <div class="text">
+            <h1 class="heading-text" data-text="Fastest"> way to follow the crypto market.</h1>
+            <p>
+                Cryptexx makes buying and selling of 100+ cryptocurrencies easy for millions of people all over the world.
+                Click the button below to get started.
+            </p>
+            <br>
+            <button>Get Started</button>
+        </div>
+
+        <div class="image">
+            <img  class="banner-image" src="images/banner-image.png" alt="image from Pinterest">
+        </div>
+    </div>
+
+    <!-- row displaying cryptocurrencies information -->
+    <div class="crypto-heading">
+        <h2>Top cryptocurrencies..</h2>
+    </div>
+    <div class="crypto-row">
+        <div class="crypto">
+            <div class="crypto-coin">
+                <p class="crypto-name"><i class="bi bi-currency-bitcoin"></i><span class="bold">BTC</span>(Bitcoin)</p>
+                <p class="crypto-price">$56,675,787</p>
+            </div>    
+            <div class="crypto-info">
+                <p class="percent">
+                    (+15.25%)<i class="bi bi-arrow-up"></i>
+                    <br>
+                    <span>24H change</span>
+                </p>
+                <p class="value">
+                    $2.100
+                    <br>
+                    <span>24H volume</span>
+                </p>
+            </div>
+            <button>Buy coin</button>
+        </div>
+
+        <div class="crypto">
+            <div class="crypto-coin">
+                <p class="crypto-name"><i class="bi bi-currency-bitcoin"></i><span class="bold">ETH</span>(Ethereum)</p>
+                <p class="crypto-price">$56,675,787</p>
+            </div>
+            <div class="crypto-info">
+                <p class="percent">
+                    (+15.25%) <i class="bi bi-arrow-up"></i>
+                    <br>
+                    <span>24H change</span>
+                </p>
+
+                <p class="value">
+                    $2.100
+                    <br>
+                    <span>24H volume</span>
+                </p>
+            </div>
+            <button>Buy coin</button>
+        </div>
+
+        <div class="crypto">
+            <div class="crypto-coin">
+                <p class="crypto-name"><i class="bi bi-currency-bitcoin"></i><span class="bold">LTC</span>(Litecoin)</p>
+                <p class="crypto-price">$56,675,787</p>
+            </div>
+            <div class="crypto-info">
+                <p class="percent">
+                    (+15.25%) <i class="bi bi-arrow-up"></i>
+                    <br>
+                    <span>24H change</span>
+                </p>
+
+                <p class="value">
+                    $2.100
+                    <br>
+                    <span>24H volume</span>
+                </p>
+            </div>
+            <button>Buy coin</button>
+        </div>
+
+        <div class="crypto">
+            <div class="crypto-coin">
+                <p class="crypto-name"><i class="bi bi-currency-bitcoin"></i><span class="bold">XRP</span>(Ripple)</p>
+                <p class="crypto-price">$56,675,787</p>
+            </div>
+            <div class="crypto-info">
+                <p class="percent">
+                    (+15.25%) <i class="bi bi-arrow-up"></i>
+                    <br>
+                    <span>24H change</span>
+                </p>
+
+                <p class="value">
+                    $2.100
+                    <br>
+                    <span>24H volume</span>
+                </p>
+            </div>
+            <button>Buy coin</button>
+        </div>
+
+        <div class="crypto">
+            <div class="crypto-coin">
+                <p class="crypto-name"><i class="bi bi-currency-bitcoin"></i><span class="bold">ADA</span>(Cardano)</p>
+                <p class="crypto-price">$56,675,787</p>
+            </div>
+            <div class="crypto-info">
+                <p class="percent">
+                    (+15.25%) <i class="bi bi-arrow-up"></i>
+                    <br>
+                    <span>24H change</span>
+                </p>
+
+                <p class="value">
+                    $2.100
+                    <br>
+                    <span>24H volume</span>
+                </p>
+            </div>
+            <button>Buy coin</button>
+        </div>
+
+        <!-- <div class="crypto">
+            <div class="crypto-coin">
+                <p class="crypto-name"><i class="bi bi-currency-bitcoin"></i><span class="bold">BTC</span>(Bitcoin)</p>
+                <p class="crypto-price">$56,675,787</p>
+            </div>
+            <div class="crypto-info">
+                <p class="percent">
+                    (+15.25%) <i class="bi bi-arrow-up"></i>
+                    <br>
+                    <span>24H change</span>
+                </p>
+
+                <p class="value">
+                    $2.100
+                    <br>
+                    <span>24H volume</span>
+                </p>
+            </div>
+            <button>Buy coin</button>
+        </div>
+
+        <div class="crypto">
+            <div class="crypto-coin">
+                <p class="crypto-name"><i class="bi bi-currency-bitcoin"></i><span class="bold">BTC</span>(Bitcoin)</p>
+                <p class="crypto-price">$56,675,787</p>
+            </div>
+            <div class="crypto-info">
+                <p class="percent">
+                    (+15.25%) <i class="bi bi-arrow-up"></i>
+                    <br>
+                    <span>24H change</span>
+                </p>
+
+                <p class="value">
+                    $2.100
+                    <br>
+                    <span>24H volume</span>
+                </p>
+            </div>
+            <button>Buy coin</button>
+        </div>
+
+        <div class="crypto">
+            <div class="crypto-coin">
+                <p class="crypto-name"><i class="bi bi-currency-bitcoin"></i><span class="bold">BTC</span>(Bitcoin)</p>
+                <p class="crypto-price">$56,675,787</p>
+            </div>
+            <div class="crypto-info">
+                <p class="percent">
+                    (+15.25%) <i class="bi bi-arrow-up"></i>
+                    <br>
+                    <span>24H change</span>
+                </p>
+
+                <p class="value">
+                    $2.100
+                    <br>
+                    <span>24H volume</span>
+                </p>
+            </div>
+            <button>Buy coin</button>
+        </div>
+
+        <div class="crypto">
+            <div class="crypto-coin">
+                <p class="crypto-name"><i class="bi bi-currency-bitcoin"></i><span class="bold">BTC</span>(Bitcoin)</p>
+                <p class="crypto-price">$56,675,787</p>
+            </div>
+            <div class="crypto-info">
+                <p class="percent">
+                    (+15.25%) <i class="bi bi-arrow-up"></i>
+                    <br>
+                    <span>24H change</span>
+                </p>
+
+                <p class="value">
+                    $2.100
+                    <br>
+                    <span>24H volume</span>
+                </p>
+            </div>
+            <button>Buy coin</button>
+        </div>
+
+        <div class="crypto">
+            <div class="crypto-coin">
+                <p class="crypto-name"><i class="bi bi-currency-bitcoin"></i><span class="bold">SOL</span>(Bitcoin)</p>
+                <p class="crypto-price">$56,675,787</p>
+            </div>
+            <div class="crypto-info">
+                <p class="percent">
+                    (+15.25%) <i class="bi bi-arrow-up"></i>
+                    <br>
+                    <span>24H change</span>
+                </p>
+
+                <p class="value">
+                    $2.100
+                    <br>
+                    <span>24H volume</span>
+                </p>
+            </div>
+            <button>Buy coin</button>
+        </div> -->
+    </div>
+
+    <!-- rows for displaying calculator and other information -->
+    <div class="row">
+        <div class="text">
+            <h2>Crypto to Currency Calculator</h2>
+            <p>
+                Convert cryptocurrencies to fiat currencies, and get the values 
+                in up to 6 fiat currencies such as GBP, EUR, USD, etc.
+                Enter your preferred amount and currencies and click the convert button.
+            </p>
+            <button>Explore</button>
+        </div>
+
+        <div class="calculator">
+            <div class="calculate">
+                <form action="">
+                    <div>
+                        <label for="">You Have</label>
+                        <div class="calc">
+                            <input type="text" name="currency-amount" id="currency-amount" inputmode="numeric" autofocus placeholder="15,000">
+                            <select name="currency" id="currency" value="NGN">
+                                <option value="USD">USD</option>
+                                <option value="NGN">NGN</option>
+                                <option value="GBP">GBP</option>
+                                <option value="EUR">EUR</option>
+                                <option value="CAD">CAD</option>
+                                <option value="CNY">CNY</option>
+                            </select>
+                        </div>
+                    </div>
+    
+                    <div>
+                        <label for="">You Get</label>
+                        <div class="calc">
+                            <input type="text" name="crypto-amount" id="crypto-amount" placeholder="0.23" readonly>
+                            <select name="crypto" id="crypto" value="BTC">
+                                <option value="BTC">BTC</option>
+                                <option value="ETH">ETH</option>
+                                <option value="LTC">LTC</option>
+                                <option value="ADA">ADA</option>
+                                <option value="XRP">XRP</option>
+                                <option value="SOL">SOL</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+                <div>
+                    <button><i class="bi bi-arrow-down-up"></i></button>
+                </div>
+            </div>
+
+            <h2>We accept</h2>
+            <div class="payment-options">
+                <div>
+                    <img src="images/mastercard.svg" alt="Mastercard Logo" class="mastercard pay-logo" >
+                </div>
+                <div>
+                    <img src="images/paypal.svg" alt="Paypal Logo" class="paypal pay-logo">
+                </div>
+                <div>
+                    <img src="images/visa.svg" alt="Visa Logo" class="visa pay-logo">
+                </div>
+                <!-- <div class="paystack">
+                    <img src="" alt="">
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="deposit-row">
+        <div class="text">
+            <h2>Earn interest on your crypto deposits</h2>
+            <p>
+                Deposit crypto and earn interest while hodling your favorite coins. 
+                It is secure, fast and easy allowing you to earn up to 11% APY on staked coins. 
+                Click the button below to learn more.
+            </p>
+            <button>Learn more</button>
+        </div>
+
+        <div class="image">
+            <img class="deposit-image" src="images/deposit.png" alt="image from pinterest">
+        </div>
+    </div>
+
+    <!--About us and our core values section -->
+    <div class="about">
+        <div>
+            <i class="bi bi-bar-chart-line"></i>
+            <br><br>
+            <h3>Value Performance</h3>
+            <p>
+                Get started with Cryptexx and build savings and 
+                investments by trading high performing major cryptocurrencies.
+            </p>
+        </div>
+
+        <div>
+            <i class="bi bi-shield-check"></i>
+            <br><br>
+            <h3>Strong Security</h3>
+            <p>
+                We secure transaction data via end-to-end encryption, 
+                ensuring that only you have access to your personal information.
+            </p>
+        </div>
+
+        <div>
+            <i class="bi bi-credit-card-2-front"></i>
+            <br><br>
+            <h3>Payment Options</h3>
+            <p>
+                Explore endless possibilities and trade with your preferred financial service 
+                providers with our flexible payment options.
+                
+            </p>
+        </div>
+
+        <div>
+            <i class="bi bi-search"></i>
+            <br><br>
+            <h3>Transparency</h3>
+            <p>
+                Crptexx is trusted by millions of users with our transparent technical measures 
+                used to protect user assets and funds.
+            </p>
+        </div>
+    </div>
+
+    <!-- Install mobile apps section -->
+    <div class="row install-apps">
+        <div>
+            <h2>Download and Install Cryptexx Mobile App Today</h2>
+            <p> 
+                Explore an easy and free way to instantly trade cryptocurrency from 
+                your mobile devices regardless of your location.
+            </p>
+        </div>
+
+        <div>
+            <p>Sign up and get started right away with our instant and seamless onboarding process. </p>
+            <div class="buttons">
+                <button>
+                    <i class="bi bi-play-circle"></i>
+                    <p><span class="small">Download on</span><br>Google Play</p>
+                </button>
+                <button>
+                    <i class="bi bi-apple"></i>
+                    <p><span class="small">Download on</span><br>App Store</p>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="foot">
+            <h2>Cryptexx</h2>
+            <p>Crypto trading made easy and quick for everyone.</p>
+            <p>info@cryptex.com</p>
+        </div>
+
+        <div class="foot">
+            <h4>Products</h4>
+            <p>Blockchain</p>
+            <p>Security</p>
+            <p>API</p>
+            <p>Interests</p>
+        </div>
+
+        <div class="foot">
+            <h4>Cryptocurrency</h4>
+            <p>Bitcoin</p>
+            <p>Litecoin</p>
+            <p>Ethereum</p>
+            <p>Ripple</p>
+        </div>
+
+        <div class="foot">
+            <h4>Resources</h4>
+            <p>Trade</p>
+            <p>Guides</p>
+            <p>Wallets</p>
+            <p>FAQs</p>
+        </div>
+
+        <div class="foot">
+            <h4>Subscribe to our newsletter</h4>
+            <form class="subscribe">
+                <input type="email" autofocus required placeholder="Your email...">
+                <i id="subscribe" class="bi bi-send-fill"></i>
+            </form>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

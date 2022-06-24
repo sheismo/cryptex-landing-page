@@ -1,0 +1,956 @@
+/* #49F992
+#92A7AA
+#FFF */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(#02191A, #042F2D, #031E1E);
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    width: 80%;
+    height: 10vh;
+    margin: auto;
+    padding: 10px 10px 10px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+}
+
+.logo-div{
+    width: 10%;
+}
+
+.logo-div h1 a, .foot h2{
+    text-decoration: none;
+    color: #01FE87;
+    
+}
+
+nav{
+    width: 50%;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li{
+    display: inline;
+    list-style: none;
+}
+
+nav ul li a{ 
+    padding: 3px;
+    text-decoration: none;
+    color: #FFF;
+    font-size: 0.85rem;
+}
+
+nav ul li a:hover{ 
+    border-bottom: 2px solid #48ff88;
+}
+
+header .buttons{
+    width: 35%;
+    margin-left: 30px;
+}
+
+.register{
+    padding: 7px 10px;
+    color: #FFF;
+    background: transparent;
+    border: 1px solid #ddd;
+    outline: none;
+    border-radius: 10px;
+    margin-right: 10px;
+    font-family: inherit;
+}
+
+.connect{
+    padding: 8px 10px;
+    color: #000;
+    background: linear-gradient(to right, #E7FF7F, #96FD8A,#5AFA91, #48ff88);
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-family: inherit;
+}
+
+.bi-person, .bi-wallet{
+    margin-right: 2px;
+}
+
+.bi-list, .bi-x{
+    padding: 2px 10px;
+    display: none;  
+    font-size: 2.5rem;
+    border-radius: 15px;
+    font-weight: 600;
+}
+
+.bi-list{
+    color: #48FF88;
+    border: 2px solid #48FF88;
+}
+
+.bi-x{
+    color: #042F2D;
+    border: 2px solid #042F2D;
+}
+
+.mobile-nav{
+    width: 100%;
+    height: 100vh;
+    display:none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #01FE87;
+    z-index: 7;
+}
+
+nav.mobile-screen{
+    width: 75%;
+    margin: auto;
+}
+
+nav.mobile-screen ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav.mobile-screen ul li{
+    display: inline;
+    list-style: none;
+    margin-bottom: 25px;
+}
+
+nav.mobile-screen ul li a{ 
+    padding: 10px;
+    text-decoration: none;
+    color: #042F2D;
+    font-size: 1.5rem;
+}
+
+nav.mobile-screen ul li a:hover{ 
+    border-bottom: 2px solid #042F2D;
+}
+
+.mobile-screen ul .register, .mobile-screen ul .connect{
+    padding: 9px 12px;
+    color: #000;
+    background: linear-gradient(to right, #E7FF7F, #96FD8A,#5AFA91, #48ff88);
+    border: 1px solid #042F2D;
+    outline: none;
+    border-radius: 10px;
+    font-family: inherit;
+}
+
+@media (min-width: 769px) and (max-width: 991px){
+    header{
+        width: 95%;
+        margin: auto;
+    }
+    
+    .logo-div{
+        width: 10%;
+    }
+
+    .logo-div h2, .foot h2{
+        font-size: 1.5rem;
+    }
+    
+    nav.large-screen{
+        width: 45%;
+    }
+
+    nav.large-screen ul li a{ 
+        padding: 2px;
+        font-size: 0.8rem;
+    }
+    
+    header .buttons{
+        width: 45%;
+    }
+
+    .register{
+        margin-right: 5px;
+    }
+
+    .register, .connect{
+        padding: 6px 9px;
+    }
+
+    .bi-list{
+        display: none;
+    }
+}
+
+@media (max-width: 768px){
+    header{
+        width: 95%;
+        justify-content: space-between;
+        padding: 15px 20px;
+    }
+
+    nav.large-screen, header .buttons{
+        display: none;
+    }
+
+    .bi-list, .bi-x{
+        display: block;
+        z-index: 10;
+    }
+}
+
+.banner{
+    width: 80%;
+    margin: 70px auto -150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row, .deposit-row, .about{
+    width: 80%;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text{
+    width: 46%;
+    padding: 10px 15px;
+}
+
+.image{
+    width: 50%;
+    padding: 10px;
+}
+
+.banner-image{
+    width: 100%;
+    max-height: 500px;
+    margin: -150px auto 0;
+}
+
+.deposit-image{
+    width: 100%;
+    max-height: 500px;
+    margin: auto ;
+}
+
+.banner .text{
+    height: 500px;
+}
+
+.banner .text p, .row .text p, .deposit-row .text p{
+    color: #DDD;
+    font-size: 0.9rem;
+}
+
+.text button{
+    width: 35%;
+    padding: 12px 15px;
+    color: #000;
+    background: linear-gradient(to right, #E7FF7F, #96FD8A,#5AFA91, #48ff88);
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+
+.register:hover, .connect:hover, .text button:hover{
+    transform: scale(1.01);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 2px 10px 10px;
+}
+
+@media (min-width: 769px) and (max-width: 991px){
+    .banner, .row, .deposit-row, .about{
+        width: 90%;
+        margin: 40px auto 20px;
+    }    
+    
+    .text{
+        width: 48%;
+        padding: 10px;
+    }
+    
+    .image{
+        width: 51%;
+    }
+    
+    .text button{
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px){
+    .banner, .row, .deposit-row, .about{
+        width: 90%;
+        flex-direction: column;
+    }
+    
+    .text, .image{
+        width: 100%;
+    }
+
+    .banner-image{
+        width: 100%;
+        max-height: 500px;
+        margin: auto;
+    }
+
+    .text{
+        margin-bottom: 20px;
+    }
+    
+    .text button{
+        width: 50%;
+    }
+
+    .banner .text p, .row .text p, .deposit-row .text p{
+        font-size: 1.1rem;
+    }
+}
+
+.crypto-heading{
+    width: 80%;
+    margin: 30px 0 10px;
+}
+
+.crypto-heading h2{
+    padding: 10px;
+    color: #ABEC8D;
+    font-size: 2rem;
+}
+
+.crypto-row{
+    width: 100%;
+    margin: 10px auto 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.crypto{
+    width: 19%;
+    margin-bottom: 20px;
+    padding: 15px 10px 12px;
+    position: relative;
+    background-color:#01141a;
+    border-radius: 15px;
+}
+
+.crypto-name{
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+}
+
+.crypto-name .bi{
+    padding: 8px 10px;
+    margin-right: 10px;
+    border: 1px solid #B4ED99;
+    border-radius: 10px;
+    color: #B4ED99;
+}
+
+.crypto-name .bold{
+    font-weight: 600;
+}
+
+.crypto-price{
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.crypto-info{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom: 25px;
+}
+
+.crypto-info .percent{
+    color:#106D3E;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.crypto-info .value{
+    color:#FFF;
+    font-size: 0.8rem;
+}
+
+.crypto-info .percent span, .crypto-info .value span{
+    color: #CCC;
+    font-size: 0.65rem;
+    font-weight: 200;
+}
+
+.crypto button{
+    margin: 0;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(to right, #E7FF7F, #96FD8A,#5AFA91, #48ff88);
+    color: #000;
+    font-family: inherit;
+    border: none;
+    outline: none;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 10px;
+}
+
+.crypto button:hover{
+    transform: scale(1.02);
+}
+
+@media (min-width: 769px) and (max-width: 991px){
+    .crypto-heading h2{
+        font-size: 1.8rem;
+    }
+    
+    .crypto{
+        width: 24%;
+    }
+
+    .crypto:last-of-type{
+        display:none;
+    }
+    
+    .crypto button{
+        padding: 7px 11px;
+    } 
+}
+
+@media (max-width: 768px){
+    .crypto-heading h2{
+        font-size: 1.5rem;
+    }
+    
+    .crypto-row{
+        flex-direction: column;
+    }
+    
+    .crypto{
+        width: 75%;
+        margin: 15px auto;
+        padding: 15px ;
+    }
+
+    .crypto:last-of-type{
+        display:none;
+    }
+    
+    .crypto button{
+        padding: 9px 15px;
+    }
+
+    .crypto-name, .crypto-price{
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+}
+
+.row .text{
+    width: 40%;
+    padding: 10px 15px;
+}
+
+.row .text h2, .deposit-row .text h2{
+    font-size: 1.9rem;
+}
+
+.calculator{
+    width: 53%;
+}
+
+.calculate{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.calculate form{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.calculate div{
+    width: 25%;
+    margin-left: 15px;
+}
+
+.calculate div button{
+    height: 90px;
+    padding: 10px 13px;
+    border: 1px solid #B4ED99;
+    border-radius: 30px;
+    background: transparent;
+    color: #B4ED99;
+    font-size: 1.5rem;
+}
+
+.calculate div button:hover{
+    color: #000;
+    background: #B4ED99;
+}
+
+.calculate form div{
+    width:100%;
+    margin: 0;
+}
+
+.calculate form div label{
+    font-size: 0.7rem;
+    font-weight: 200;
+    color: #BBB;
+}
+
+.calculate form div .calc{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom: 20px;
+}
+
+form div .calc input{
+    width: 60%;
+    padding: 10px 10px 10px 3px;
+    background: transparent;
+    color: #FFF;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #FFF;
+    font-weight: 600;
+}
+
+form div .calc input::placeholder{
+    color: #CCC;
+}
+
+form div .calc select{
+    width: 25%;
+    padding: 10px;
+    background: transparent;
+    color: #FFF;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #FFF;
+}
+
+form div .calc option{
+    color: #000;
+    background:  #48ff88;
+}
+
+.payment-options{
+    width: 95%;
+}
+
+.payment-options div{
+    width: 29%;
+    padding: 5px;
+    margin-right: 2%;
+    display: inline-block;
+    background: #1d3647;
+    text-align: center;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.pay-logo{
+    width: 95%;
+    margin: auto;
+    height: 40px;
+}
+
+@media (min-width: 769px) and (max-width: 991px){
+    .row .text{
+        width: 44%;
+        padding: 10px 20px;
+    }
+    
+    .row .text h2, .deposit-row .text h2{
+        font-size: 1.5rem;
+    }
+    
+    .calculator{
+        width: 54%;
+    }
+
+    form div .calc select{
+        width: 30%;
+    }
+    
+    .payment-options div{
+        width: 30%;
+        padding: 0;
+    }
+    
+    .pay-logo{
+        width: 95%;
+        margin: auto;
+        height: 50px;
+    }
+}
+
+@media (max-width: 768px){
+    .row .text{
+        width: 90%;
+        padding: 0;
+    }
+    
+    .row .text h2, .deposit-row .text h2{
+        font-size: 1.5rem;
+    }
+
+    .calculator{
+        width: 90%;
+    }
+
+    .calculate form{
+        width: 70%;
+    }
+    
+    form div .calc select{
+        width: 35%;
+    }
+    
+    .pay-logo{
+        height: 30px;
+    } 
+}
+
+/* About Section */
+.about div{
+    width: 20%;
+    background: transparent;
+    color: #FFF;
+}
+
+.about div i{
+    padding: 12px 15px;
+    border: 1px dashed #B4ED99;
+    border-radius: 10px;
+    color: #B4ED99;
+    font-size: 1.2rem;
+}
+
+.about div h3{
+    font-size: 0.8rem,
+}
+
+.about div p{
+    text-align: justify;
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+@media (min-width: 769px) and (max-width: 991px){
+    .about div{
+        width: 22%;
+    }
+}
+
+@media (max-width: 768px){
+    .about div{
+        width: 75%;
+        margin-bottom: 40px;
+    }
+
+    .about div i{
+        padding: 10px 12px;
+        font-size: 1rem;
+    }
+
+    .about div h3, .about div p{
+        font-size: 1.1rem;
+    }
+}
+
+/* Install Mobile Apps Section */
+.install-apps{
+    padding: 25px 40px;
+    background: linear-gradient( to bottom right, #007A83, #01846C, #025C47, #04584C, #01261E,
+                #008237, #027163, #026451,#049F8A,  #008237, #26A595, #9DB3B3, #9DB3B3 );
+    border-top-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+}
+
+.install-apps div{
+    width: 45%;
+    padding: 15px;
+}
+
+.install-apps div p{
+    font-size: 0.9rem;
+}
+
+.install-apps div .buttons{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.install-apps div .buttons button{
+    width: 49%;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: transparent;
+    color: #FFF;
+    border: 2px solid #FFF;
+    border-radius: 15px;
+}
+
+.install-apps div .buttons button:hover{
+    transform: scale(1.02);
+}
+
+.install-apps div .buttons button i{
+    margin-right: 5px;
+}
+
+.install-apps div .buttons button p{
+    padding: 0;
+    margin: 0;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.install-apps div .buttons button p .small{
+    font-size: 0.7rem;
+    font-weight: 200;
+}
+
+.bi-play-circle,.bi-apple{
+    font-size: 2rem;
+    font-weight:500;
+}
+
+@media (min-width: 769px) and (max-width: 991px){
+    .install-apps{
+        padding: 15px 25px;
+    }
+    
+    .install-apps div{
+        width: 49%;
+        padding: 10px;
+    }
+    
+    .install-apps div .buttons{
+        flex-direction: column;
+    }
+
+    .install-apps div .buttons button{
+        max-width: 60%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 768px){
+    .install-apps{
+        padding: 10px 15px;
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
+    
+    .install-apps div{
+        width: 90%;
+        padding: 10px;
+    }
+    
+    .install-apps div:first-child p{
+        display: none;
+    }
+
+    .install-apps div p{
+        font-size: 1.1rem;
+    }
+}
+
+footer{
+    width: 80%;
+    margin: 70px auto 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.foot:first-of-type, .foot:last-of-type{
+    width: 22%;
+}
+
+.foot{
+    width: 18%;
+}
+
+.foot h4, .foot p{
+    font-size: 0.9rem;
+}
+
+.foot form{
+    display: flex;
+}
+
+.foot form input{
+    width: 80%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: #01090D;
+    color: #FFF;
+}
+
+.foot form i{
+    padding: 4px 8px;
+    margin-left: 5px;
+    border: 1px solid #B4ED99;
+    border-radius: 8px;
+    color: #B4ED99;
+}
+
+.foot form i:hover{
+    color: #000;
+    background: #B4ED99;
+}
+
+@media (min-width: 769px) and (max-width: 991px){
+    footer{
+        width: 90%;
+    }
+
+    .foot:first-of-type, .foot:last-of-type{
+        width: 21%;
+    }
+
+    .foot{
+        width: 19%;
+    }
+}
+
+@media (max-width: 768px){
+    footer{
+        width: 90%;
+        flex-direction: column;
+        padding: 5px 10px 15px;
+    }
+
+    .foot:first-of-type, .foot:last-of-type{
+        width: 95%;
+    }
+
+    .foot{
+        width: 95%;
+    }
+
+    .foot h4, .foot p{
+        font-size: 1.15rem;
+    }
+
+    .foot form input{
+        width: 60%;
+    }
+}
+
+div.center{
+    width: 60%;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.pulse{
+    width: 50px;
+    height: 50px;
+    margin-left: 50%;
+    border-radius: 50%;
+    background: #CEFFAE;
+    position: relative;
+}
+
+.pulse::after{
+    animation: pulse 1000ms cubic-bezier(0.9, 0.7, 0.5, 0.9) infinite;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0;
+    }
+    50%{
+        transform: scale(1.4);
+        opacity: 0.4;
+    }
+}
+
+.pulse::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left:0;
+    background: #48FF88;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+/* Heading Text animation styling */
+.heading-text{
+    text-transform: uppercase;
+}
+
+.heading-text::before{
+    content: attr(data-text);
+}
+
+.heading-text[data-text]{
+    width: 50%;
+    color: #01Fe87;
+    -webkit-text-stroke: 0.3vw #01FE87;
+    border-right: 1px solid #01FE87;
+    overflow: hidden;
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate{
+    0%, 10%, 100%{
+        width: 50%;
+    }
+
+    70%, 90%{
+        width: 100%;
+    }
+}
+
+
+
+
+
